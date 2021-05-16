@@ -1,0 +1,6 @@
+html {
+    background-color: honeydew;
+}
+.interior:hover {
+    background-color: green !important;
+}
