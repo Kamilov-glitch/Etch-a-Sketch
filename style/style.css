@@ -1,6 +1,57 @@
 html {
-    background-color: honeydew;
+    background-color: #FFFFF0;
 }
-.interior:hover {
+/*.interior:hover {
     background-color: green !important;
+}*/
+#title {
+    margin: auto;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
 }
+h1 {
+    display: inline-block;
+    font-family: 'Shadows Into Light', cursive, sans-serif;
+    font-size: 50px;
+    color: rgb(168, 24, 24);
+    animation: fadeIn linear 7s;
+    -webkit-animation: fadeIn linear 7s;
+    -moz-animation: fadeIn linear 7s;
+    -o-animation: fadeIn linear 7s;
+    -ms-animation: fadeIn linear 7s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  button {
+      padding: 5px 5px 5px 5px;
+      border-color: gray;
+      display: flex;
+      border-radius: 10px;
+  }
+  button:hover {
+      background-color: rgb(230, 224, 224);
+  }
