@@ -28,21 +28,28 @@ h1.style.cssText = 'color: rainbow'
 title.appendChild(h1);
 body.insertBefore(title, container);
 
+const buttonContainer = document.createElement('div');
+buttonContainer.setAttribute('id', 'btnContainer');
+body.appendChild(buttonContainer);
+
 const resizeBtn = document.createElement('button');
+resizeBtn.setAttribute('id', 'resizeBtn');
 resizeBtn.textContent = 'Resize and/or Start Again';
-body.appendChild(resizeBtn);
+buttonContainer.appendChild(resizeBtn);
 
 const grayButton = document.createElement('button');
 grayButton.textContent = 'Gray Scale';
-body.appendChild(grayButton);
+buttonContainer.appendChild(grayButton);
 
 const rainbowButton = document.createElement('button');
+rainbowButton.setAttribute('id', 'rainbowBtn');
 rainbowButton.textContent = 'Rainbow Colors';
-body.appendChild(rainbowButton);
+buttonContainer.appendChild(rainbowButton);
 
 const randomButton = document.createElement('button');
+randomButton.setAttribute('id', 'randomBtn');
 randomButton.textContent = 'Random Colors';
-body.appendChild(randomButton);
+buttonContainer.appendChild(randomButton);
 
 let grayButtonTrue = false;
 grayButton.addEventListener('click', () => {
@@ -113,8 +120,10 @@ function createDivs () {
                 grayScaleColors(div);
             } else if (rainbowButtonTrue) {
                 rainbowColors(div);
-            } else {
+            } else if(randomButtonTrue){
                 randomColors(div);
+            } else {
+                div.style.backgroundColor = 'green';
             }
         })
     })

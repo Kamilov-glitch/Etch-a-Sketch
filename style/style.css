@@ -48,10 +48,30 @@ h1 {
 
   button {
       padding: 5px 5px 5px 5px;
-      border-color: gray;
+      border-color: transparent;
+      outline: none;
       display: flex;
       border-radius: 10px;
+      font-size: 20px;
+      margin: 10px;
   }
   button:hover {
       background-color: rgb(230, 224, 224);
+  }
+
+  #btnContainer {
+    padding:20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #rainbowBtn {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  }
+
+  #randomBtn {
+    background: linear-gradient(90deg, bisque, cyan, yellow);
+  }
+  #resizeBtn {
+    background-color: goldenrod;
   }
